@@ -19,6 +19,7 @@
 ### Components
 
 1. Header component
+2. Home component
 
 ### Header component
 
@@ -28,3 +29,8 @@
 4. Importing search icon from 'material-ui' and placing it after input element
 5. Creating links and basket icon and count after each other
 6. Implementing style from ./header.css
+
+### Home component
+
+1. Importing main/banner image and rendering it
+2. Applying some style
