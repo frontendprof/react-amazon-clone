@@ -2,6 +2,7 @@
 
 - npx create-react-app ./
 - npm install -g firebase-tools
+- npm install react-router-dom
 
 ### Initial setup
 
