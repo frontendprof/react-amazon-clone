@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 
+import amazonImg from "../../images/amazon_img.png";
+
 import "./Header.css";
 
 
@@ -19,7 +21,7 @@ const Header = () => {
             
                 <img 
                     className="header__logo" 
-                    src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
+                    src={amazonImg} 
                     alt="amazonIcon"
                 />
             </Link>
