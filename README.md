@@ -22,6 +22,22 @@
 2. Home component
 3. Product component
 
+### contextAPI
+
+1. reducer.js
+2. StateProvider.js
+
+### reducer.js
+
+1. Creating initialState with basket array value and exporting it
+2. Creating reducer function with state and action arguments and checking cases
+
+### StateProvider.js
+
+1. Creating context with createContext()
+2. Creating context provider and passing value with reducer and initialState arguments
+3. Exporting context provider and wrapping App componnent up with it
+
 ### Header component
 
 1. Getting amazon logo icon
@@ -30,6 +46,7 @@
 4. Importing search icon from 'material-ui' and placing it after input element
 5. Creating links and basket icon and count after each other
 6. Implementing style from ./header.css
+7. Using useContext and getting basket props and passing it to checkout basket count
 
 ### Home component
 
@@ -42,3 +59,4 @@
 1. Building product layout
 2. Rendering each and every props of component
 3. Applying style
+4. Triggering onClick with addToBasket function which uses contextAPI
