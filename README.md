@@ -20,6 +20,7 @@
 
 1. Header component
 2. Home component
+3. Product component
 
 ### Header component
 
@@ -34,3 +35,10 @@
 
 1. Importing main/banner image and rendering it
 2. Applying some style
+3. Rendering Product component and passing props
+
+### Product Component
+
+1. Building product layout
+2. Rendering each and every props of component
+3. Applying style
