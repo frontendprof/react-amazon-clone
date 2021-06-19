@@ -21,6 +21,7 @@
 1. Header component
 2. Home component
 3. Product component
+4. Checkout component
 
 ### contextAPI
 
@@ -61,3 +62,7 @@
 2. Rendering each and every props of component
 3. Applying style
 4. Triggering onClick with addToBasket function which uses contextAPI
+
+### Checkout Component
+
+1.
