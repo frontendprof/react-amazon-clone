@@ -66,7 +66,7 @@ const Home = () => {
             </div>
 
 
-             {/* First row */}
+             {/* Third row */}
              <div className="home__row">
                 <Product 
                     id="62321341"

@@ -31,6 +31,7 @@
 
 1. Creating initialState with basket array value and exporting it
 2. Creating reducer function with state and action arguments and checking cases
+3. Creating action type "ADD_TO_BASKET" and its logic
 
 ### StateProvider.js
 
