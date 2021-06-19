@@ -24,6 +24,7 @@ const Checkout = () => {
 
                      {basket.map(item=>(
                          <CheckoutProduct 
+                            key={item.title}
                             item={item.id} 
                             title={item.title} 
                             image={item.image} 

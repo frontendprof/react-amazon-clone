@@ -6,10 +6,10 @@ import { useStateValue } from '../../contextAPI/StateProvider'
 
 
 const CheckoutProduct = ({item,title,image,price,rating}) => {
-    const [{basket}]=useStateValue();
+    const [{basket},dispatch]=useStateValue();
 
     const removeFromBasket=()=>{
-        dispatchEvent({
+        dispatch({
             type:"REMOVE_FROM_BASKET",
             id:item
         })
