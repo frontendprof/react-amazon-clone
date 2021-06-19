@@ -22,6 +22,7 @@
 2. Home component
 3. Product component
 4. Checkout component
+5. CheckoutProduct component
 
 ### contextAPI
 
@@ -33,6 +34,7 @@
 1. Creating initialState with basket array value and exporting it
 2. Creating reducer function with state and action arguments and checking cases
 3. Creating action type "ADD_TO_BASKET" and its logic
+4. Creating action type "REMOVE_FROM_BASKET" and its logic
 
 ### StateProvider.js
 
@@ -64,5 +66,9 @@
 4. Triggering onClick with addToBasket function which uses contextAPI
 
 ### Checkout Component
+
+1.
+
+### CheckoutProduct Component
 
 1.

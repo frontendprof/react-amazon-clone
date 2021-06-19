@@ -15,8 +15,7 @@ import { useStateValue } from '../../contextAPI/StateProvider';
 
 const Header = () => {
     
-    const [{basket},dispatch]=useStateValue();
-    console.log(basket);
+    const [{basket}]=useStateValue();
     return (
         <nav className="header">
 
