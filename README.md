@@ -5,6 +5,7 @@
 - npm install react-router-dom
 - npm install @material-ui/core
 - npm install @material-ui/icons
+- npm install react-currency-format --save
 
 ### Initial setup
 

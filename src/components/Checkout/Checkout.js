@@ -3,14 +3,20 @@ import React from 'react'
 import { useStateValue } from '../../contextAPI/StateProvider'
 import adsImg from "../../images/adsImg.jpg"
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct'
+import Subtotal from '../Subtotal/Subtotal'
 import "./Checkout.css"
+
+
 
 const Checkout = () => {
     const [{basket}]=useStateValue();
     return (
         <div className="checkout">
-            <img
-             src={adsImg} alt="" className="checkout__ad" />
+            <div className="checkout_left">
+                  <img
+                src={adsImg} alt="adsImg" className="checkout__ad" />
+
+            
              {(basket?.length===0)?(
                  <div>
                      <h2>Your Shopping Basket is Empty</h2>
@@ -35,6 +41,14 @@ const Checkout = () => {
                  </div>
              )
             }
+            </div>
+            {basket.length>0 &&
+                <div className="checkout_right">
+                    <Subtotal />
+                </div>
+            }
+            
+              
         </div>
     )
 }
