@@ -29,7 +29,7 @@ const Product = ({id,title,image,price,rating}) => {
                 </div>
 
                 <div className="product__rating">
-                    {Array(rating).fill().map(_=>(<p>⭐</p>))}
+                    {Array(rating).fill().map((_,ind)=>(<p key={ind}>⭐</p>))}
                 </div>
             </div>
             
