@@ -1,19 +1,21 @@
 
 import React from 'react'
 import CurrencyFormat from 'react-currency-format';
+import { getBasketTotal } from '../../contextAPI/reducer';
 import { useStateValue } from "../../contextAPI/StateProvider"
 
 import "./Subtotal.css"
-const [{basket},dispatch]=useStateValue()
+
 
 const Subtotal = () => {
+    const [{basket},dispatch]=useStateValue()
     return (
         <div className="subtotal">
             <CurrencyFormat 
                 renderText={value=>(
                     <>
                         <p>
-                            Subtotal ({basket.length} items)
+                            Subtotal ({basket.length} items): <strong>{`${value}`}</strong>
                         </p>
                         <small className="subtotal__gift">
                             <input type="checkbox" /> This order contains a gift
@@ -24,7 +26,7 @@ const Subtotal = () => {
                 thousandSeparator={true}
                 decimalScale={2}
                 displayType={"text"}
-                value={0}
+                value={getBasketTotal(basket)}
             />
             
             <button>Proceed to Checkout</button>

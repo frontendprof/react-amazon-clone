@@ -6,6 +6,7 @@
 - npm install @material-ui/core
 - npm install @material-ui/icons
 - npm install react-currency-format --save
+- npm i firebase
 
 ### Initial setup
 
@@ -24,6 +25,8 @@
 3. Product component
 4. Checkout component
 5. CheckoutProduct component
+6. Subtotal component
+7. Login component
 
 ### contextAPI
 
@@ -36,6 +39,7 @@
 2. Creating reducer function with state and action arguments and checking cases
 3. Creating action type "ADD_TO_BASKET" and its logic
 4. Creating action type "REMOVE_FROM_BASKET" and its logic
+5. Craeting getBasketTotal function in order to calculate item price subtotal
 
 ### StateProvider.js
 
@@ -68,8 +72,26 @@
 
 ### Checkout Component
 
-1.
+1. Conditional rendering
+2. Importing ChecoutProduct component and rendering it with style
+3. Importing Subtotal component and rendering it with applied style
+4. Using created context and getting hold of basket state and passing it down to checkoutProduct component
 
 ### CheckoutProduct Component
 
-1.
+1. Accessing props from basket state via context
+2. Rendering products with props data
+3. Styling the layout of it
+4. REMOVE_FROM_BASKET dispatch activation onClick button event handler
+
+### Subtotal Component
+
+1. Importing currency formater dependency
+2. Calculating item prices subtotal via it
+3. Styling the card like component
+
+### Login component
+
+1. Rendering amazon logo
+2. Rendering form with input, password, button with submit type
+3. Applying style with login.css
