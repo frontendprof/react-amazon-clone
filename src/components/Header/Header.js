@@ -9,13 +9,22 @@ import amazonImg from "../../images/amazon_img.png";
 
 import "./Header.css";
 import { useStateValue } from '../../contextAPI/StateProvider';
+import { auth } from '../../firebase';
 
 
 
 
 const Header = () => {
     
-    const [{basket}]=useStateValue();
+    const [{basket,user}]=useStateValue();
+
+    const login=()=>{
+        if(user){
+            auth.signOut();
+        }
+    }
+
+
     return (
         <nav className="header">
 
@@ -41,10 +50,10 @@ const Header = () => {
             {/* 1st link */}
             <div className="header__nav">
 
-                <Link to="/login" className="header__link">
-                    <div className="header__option">
-                        <span className="header__optionLineOne">Hello AbdulMalik</span>
-                        <span className="header__optionLineTwo">Sign In</span>
+                <Link to={!user && "/login"} className="header__link">
+                    <div className="header__option" onClick={login}>
+                        <span className="header__optionLineOne">Hello, {user?.email}</span>
+                        <span className="header__optionLineTwo">{user?"Sign Out":"Sign In"}</span>
                     </div>
                 </Link>             
 
