@@ -40,6 +40,7 @@
 3. Creating action type "ADD_TO_BASKET" and its logic
 4. Creating action type "REMOVE_FROM_BASKET" and its logic
 5. Craeting getBasketTotal function in order to calculate item price subtotal
+6. Creating action type "SET_USER" and its logic
 
 ### StateProvider.js
 
@@ -56,6 +57,7 @@
 5. Creating links and basket icon and count after each other
 6. Implementing style from ./header.css
 7. Using useContext and getting basket props and passing it to checkout basket count
+8. Rendering conditionally whether user logged in or not
 
 ### Home component
 
@@ -95,3 +97,4 @@
 1. Rendering amazon logo
 2. Rendering form with input, password, button with submit type
 3. Applying style with login.css
+4. Authenticating and rerendering login and register forms correspondingly via useHistory hook help
